@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include "hocdec.h"
+#define IMPORT extern __declspec(dllimport)
+IMPORT int nrnmpi_myid, nrn_nobanner_;
+
+extern void _CCA1_ca_reg();
+extern void _EGL19_ca_reg();
+extern void _EGL2_pas_reg();
+extern void _EGL36_pas_reg();
+extern void _Exp2Syn_reg();
+extern void _Exp3Syn_reg();
+extern void _ExpIClamp_reg();
+extern void _GABAInhSyn_reg();
+extern void _GapJunction_reg();
+extern void _IRK_pas_reg();
+extern void _ITR1_ca_reg();
+extern void _Inh2Syn_reg();
+extern void _InhSyn_reg();
+extern void _Intercell_CaSK_reg();
+extern void _KCNL_CaSK_reg();
+extern void _KQT3_pas_reg();
+extern void _KVS1_pas_reg();
+extern void _MEC10_na_reg();
+extern void _OSM9_trpv_reg();
+extern void _SHK1_pas_reg();
+extern void _SLO1_EGL19_cak_reg();
+extern void _SLO1_UNC2_cak_reg();
+extern void _SLO2_EGL19_cak_reg();
+extern void _SLO2_UNC2_cak_reg();
+extern void _UNC2_ca_reg();
+extern void _WormExcSyn_reg();
+extern void _WormInhSyn_reg();
+extern void _expsyn_reg();
+extern void _expsynstdp_reg();
+extern void _na_leak_reg();
+extern void _shl_pas_reg();
+extern void _trp4_trpv_reg();
+
+void modl_reg(){
+	//nrn_mswindll_stdio(stdin, stdout, stderr);
+    if (!nrn_nobanner_) if (nrnmpi_myid < 1) {
+	fprintf(stderr, "Additional mechanisms from files\n");
+
+fprintf(stderr," CCA1_ca.mod");
+fprintf(stderr," EGL19_ca.mod");
+fprintf(stderr," EGL2_pas.mod");
+fprintf(stderr," EGL36_pas.mod");
+fprintf(stderr," Exp2Syn.mod");
+fprintf(stderr," Exp3Syn.mod");
+fprintf(stderr," ExpIClamp.mod");
+fprintf(stderr," GABAInhSyn.mod");
+fprintf(stderr," GapJunction.mod");
+fprintf(stderr," IRK_pas.mod");
+fprintf(stderr," ITR1_ca.mod");
+fprintf(stderr," Inh2Syn.mod");
+fprintf(stderr," InhSyn.mod");
+fprintf(stderr," Intercell_CaSK.mod");
+fprintf(stderr," KCNL_CaSK.mod");
+fprintf(stderr," KQT3_pas.mod");
+fprintf(stderr," KVS1_pas.mod");
+fprintf(stderr," MEC10_na.mod");
+fprintf(stderr," OSM9_trpv.mod");
+fprintf(stderr," SHK1_pas.mod");
+fprintf(stderr," SLO1_EGL19_cak.mod");
+fprintf(stderr," SLO1_UNC2_cak.mod");
+fprintf(stderr," SLO2_EGL19_cak.mod");
+fprintf(stderr," SLO2_UNC2_cak.mod");
+fprintf(stderr," UNC2_ca.mod");
+fprintf(stderr," WormExcSyn.mod");
+fprintf(stderr," WormInhSyn.mod");
+fprintf(stderr," expsyn.mod");
+fprintf(stderr," expsynstdp.mod");
+fprintf(stderr," na_leak.mod");
+fprintf(stderr," shl_pas.mod");
+fprintf(stderr," trp4_trpv.mod");
+fprintf(stderr, "\n");
+    }
+_CCA1_ca_reg();
+_EGL19_ca_reg();
+_EGL2_pas_reg();
+_EGL36_pas_reg();
+_Exp2Syn_reg();
+_Exp3Syn_reg();
+_ExpIClamp_reg();
+_GABAInhSyn_reg();
+_GapJunction_reg();
+_IRK_pas_reg();
+_ITR1_ca_reg();
+_Inh2Syn_reg();
+_InhSyn_reg();
+_Intercell_CaSK_reg();
+_KCNL_CaSK_reg();
+_KQT3_pas_reg();
+_KVS1_pas_reg();
+_MEC10_na_reg();
+_OSM9_trpv_reg();
+_SHK1_pas_reg();
+_SLO1_EGL19_cak_reg();
+_SLO1_UNC2_cak_reg();
+_SLO2_EGL19_cak_reg();
+_SLO2_UNC2_cak_reg();
+_UNC2_ca_reg();
+_WormExcSyn_reg();
+_WormInhSyn_reg();
+_expsyn_reg();
+_expsynstdp_reg();
+_na_leak_reg();
+_shl_pas_reg();
+_trp4_trpv_reg();
+}
