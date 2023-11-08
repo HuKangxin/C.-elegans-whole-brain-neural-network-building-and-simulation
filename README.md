@@ -4,6 +4,6 @@ The folder 'C-elegans' contains the whole-brain modelling and simulation program
 
 Firstly, it consists of two parts: source data of C. elegans BNN(Biological Neural Network), and Python programming.
 
-The source data includes the parameters of one individual neuron and the connectivity data of the whole-brain neural network. For a single neuron, we adopted the HH model which needs the parameters of ion channels. For the synapse connection, we choose the formula of ......
+The source data includes the parameters of one individual neuron and the connectivity data of the whole-brain neural network. For a single neuron, we adopted the HH model which needs the parameters of ion channels. For the synapse connection, we choose the data from the EleganSign website.
 
-Then the whole simulation can be started by running 'DynamicsResponse' while the file 'CreateNeuron' is for building the model of one individual neuron and the file 'GeneToG' is for transforming the gene expression data of neurons to the parameters in the HH model
+Then the whole simulation can be started by running 'DynamicsResponse' while the file 'CreateNeuron' is for building the model of one individual neuron and the file 'GeneToG' is for transforming the gene expression data of neurons to the parameters in the HH model. All the building file are integrated and invoked in the simulation code 'DynamicsResponse'.
